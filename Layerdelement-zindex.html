@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Experiment</title>
+
+    <style>
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .box1 {
+            background-color: red;
+            top: 60px;
+            left: 60px;
+            z-index: 3;  
+        }
+
+        .box2 {
+            background-color: blue;
+            top: 150px;
+            left: 150px;
+            z-index: 2;  
+        }
+
+        .box3 {
+            background-color: green;
+            top: 240px;
+            left: 240px;
+            z-index: 1;  
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+
+</body>
+</html>
