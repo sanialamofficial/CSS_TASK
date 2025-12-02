@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>News Portal Layout</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .section {
+        display: inline-block;
+        vertical-align: top;
+        padding: 15px;
+        border: 2px solid blue;
+        margin-right: -2px;
+        box-sizing: border-box;
+    }
+
+    .sidebar {
+        width: 15%;
+        background-color: skyblue;
+    }
+
+    .main-content {
+        width: 55%;
+        background-color: beige;
+    }
+
+    .advertisement {
+        width: 30%;
+        background-color: lightseagreen;
+    }
+
+    .container {
+        white-space: nowrap;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+</style>
+</head>
+<body>
+
+<h1>DailyFlash News Portal</h1>
+
+<div class="container">
+
+    <div class="section sidebar">
+        <h2>Categories</h2>
+        <p>• World News</p>
+        <p>• Sports</p>
+        <p>• Technology</p>
+        <p>• Business</p>
+        <p>• Entertainment</p>
+    </div>
+
+    <div class="section main-content">
+        <h2>Top Stories</h2>
+        <p>
+            Breaking: Government announces new economic policy for 2025. Experts predict major<br>
+            shifts in global trade, with positive impacts on local industries.
+        </p>
+        <p>
+            Meanwhile, severe weather warnings have been issued in coastal areas as a powerful<br>
+            storm approaches. Authorities advise citizens to follow safety guidelines.
+        </p>
+    </div>
+
+    <div class="section advertisement">
+        <h2>Advertisements</h2>
+        <p>Buy the latest gadgets at amazing discounts!</p>
+        <p>Click here to learn more.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
