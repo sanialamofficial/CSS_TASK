@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Overflow Behavior Test</title>
+
+<style>
+    .box {
+        width: 300px;
+        height: 200px;
+        border: 2px solid grey;
+        padding: 10px;
+        margin: 20px;
+        background: white;
+        font-family: Arial, sans-serif;
+    }
+
+    /*  overflow: visible; Content spills out of the box — nothing is clipped.*/
+    .visible-box {                             
+                                                  
+        overflow: visible;
+
+    }
+
+    /*  overflow: hidden; Extra content is cut off — cannot be scrolled.*/
+    .hidden-box {
+
+        overflow: hidden;
+
+    }
+
+    /* overflow: scroll; Always shows scrollbars (horizontal & vertical). */
+    .scroll-box {
+
+        overflow: scroll;
+
+    }
+
+    /* overflow: auto; Scrollbars appear only when needed. */
+    .auto-box {
+
+        overflow: auto;
+
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Overflow Behavior Testing</h2>
+
+<div class="box visible-box">
+    <h3>overflow: visible;</h3>
+    <p>
+        This is a long block of text meant to demonstrate how overflow behaves when content 
+        exceeds the size of the box. In visible mode, the text will continue outside the box 
+        without being clipped.
+    </p>
+</div>
+
+<div class="box hidden-box">
+    <h3>overflow: hidden;</h3>
+    <p>
+        This text is longer than the box height, so any extra content will be hidden. You won't 
+        see scrollbars, and users cannot access the hidden text. Only the visible portion fits inside.
+    </p>
+</div>
+
+<div class="box scroll-box">
+    <h3>overflow: scroll;</h3>
+    <p>
+        In scroll mode, scrollbars always appear even if the content fits. This ensures the user can 
+        scroll through the content but may look unnecessary if the text is short.
+         In scroll mode, scrollbars always appear even if the content fits. This ensures the user can 
+        scroll through the content but may look unnecessary if the text is short.
+         In scroll mode, scrollbars always appear even if the content fits. This ensures the user can 
+        scroll through the content but may look unnecessary if the text is short.
+         In scroll mode, scrollbars always appear even if the content fits. This ensures the user can 
+        scroll through the content but may look unnecessary if the text is short......................
+    </p>
+</div>
+
+<div class="box auto-box">
+    <h3>overflow: auto;</h3>
+    <p>
+        Auto mode adds scrollbars only when needed. If this text exceeds the height, scrollbars will 
+        appear automatically. Otherwise, no scrollbars are shown.
+    </p>
+</div>
+
+</body>
+</html>
